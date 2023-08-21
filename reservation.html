@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/font.css.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="mainbox">
+        <div class="loader"></div>
+    </div>
+
+    <header class="position-fixed w-100">
+        <div class="topbar primary m-0 d-none d-md-block">
+            <div class="d-flex p-2 justify-content-between">
+                <div class="left d-flex pt-2 ">
+                    <h3 class="font-14 roboto secondary fw-normal"><a class="secondary ps-3" href="#"><i
+                                class="bi bi-clock pe-1"></i></a>OPENING HOURS :</h3>
+                    <h4 class="font-14 roboto text-white fw-normal ps-2">08:00 AM - 09:00 PM</h4>
+                </div>
+                <div class="hstack list-unstyled text-white">
+                    <li><i class="fa-brands fa-facebook-f pe-4 font-16"></i></li>
+                    <li><i class="bi bi-instagram pe-4 font-16"></i></li>
+                    <li><i class="bi bi-twitter pe-4 font-18"></i></li>
+                    <li><i class="bi bi-youtube font-22"></i></li>
+                </div>
+                <div class="right d-flex pt-2">
+                    <h3 class="font-14 roboto secondary fw-normal"><a href="#" class="secondary"><i
+                                class="bi bi-geo-alt-fill pe-1"></i></a> LOCATION : </h3>
+                    <h4 class="font-14 roboto text-white fw-normal ps-2 pe-3">55 MAIN STREET, NEW YORK</h4>
+                </div>
+            </div>
+        </div>
+        <div class="mainbar">
+            <nav class="navbar navbar-expand-lg navbar-dark black p-3">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold font-14" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold font-14" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold font-14" href="menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle  fw-semibold font-14" href="#" role="button"
+                                data-bs-toggle="dropdown">PAGES</a>
+                            <ul class="dropdown-menu black">
+                                <li><a class="dropdown-item text-white" href="service.html">SERVICE</a></li>
+                                <li><a class="dropdown-item text-white" href="reservation.html">RESERVATION</a></li>
+                                <li><a class="dropdown-item text-white" href="history.html">HISTORY</a></li>
+                                <li><a class="dropdown-item text-white" href="chefs.html">OUR CHEFS</a></li>
+                                <li><a class="dropdown-item text-white" href="gallary.html">GALLARY</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-semibold font-14" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-semibold font-14" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                    <button class="btn-1 b-box rounded-3 border-0 font-14 fw-semibold"><a
+                            class="text-decoration-none text-white" href="#">BOOK A TABLE</a></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- banner  -->
+
+    <div class="page-reservation">
+        <div class="page-reservation-content">
+            <h1 class="text-white font-90 ms-5 fw-semibold oswald">Reservation</h1>
+        </div>
+    </div>
+
+    <!-- form section  -->
+
+    <section class="r-form padding-80">
+        <div class="container">
+            <form action="" class="primary col-10 col-lg-6 mx-auto rounded-3">
+                <div class="form-heading">
+                    <h3 class="secondary font-16 roboto fw-light text-center pt-1">BOOKING TABLE</h3>
+                    <p class="text-white fw-normal oswald font-42 text-center ">Make Your Reservation Full Name</p>
+                    <div class="hstack flex-wrap">
+                        <div class="col-12 col-md-6 p-2 mt-3">
+                            <div class="form-input">
+                                <input type="text" class="form-control text-white bg-transparent p-3"
+                                    placeholder="Full Name">
+                                <i class="fa-regular fa-user d-block text-white font-18"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2 mt-3">
+                            <div class="form-input">
+                                <input type="email" class="form-control text-white bg-transparent p-3"
+                                    placeholder="Email Address">
+                                <i class="fa-solid fa-at d-block text-white font-18"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2 mt-3">
+                            <div class="form-input">
+                                <input type="text" class="form-control text-white bg-transparent p-3"
+                                    placeholder="Phone Number">
+                                <i class="fa-solid fa-mobile-screen-button d-block text-white font-18"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2 mt-3">
+                            <div class="form-input">
+                                <input type="text" class="form-control text-white bg-transparent p-3"
+                                    placeholder="1 Person">
+                                <i class="fa-solid fa-angle-down d-block text-white font-18 "></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2 mt-3">
+                            <div class="form-input">
+                                <input type="date" class="form-control text-white bg-transparent p-3"
+                                    placeholder="Phone Number">
+                                <i class="fa-solid fa-calendar-days d-block text-white font-18"></i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2 mt-3">
+                            <div class="form-input">
+                                <input type="time" class="form-control text-white bg-transparent p-3"
+                                    placeholder="1 Person">
+                                <i class="fa-regular fa-clock d-block text-white font-18"></i>
+                            </div>
+                        </div>
+                        <button class="btn-1 b-box rounded-3 border-0 font-14 fw-semibold mx-auto d-block mt-4"><a
+                                class="text-decoration-none text-white" href="#">BOOK A TABLE</a></button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- brand section  -->
+
+    <div class="brand padding-80">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-lg-2 col-md-4 col-sm-4 mt-md-5 mt-sm-5">
+                    <div class="brand-img1 text-center">
+                        <img class="" src="img/brand1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 col-md-4 col-sm-4 mt-md-5 mt-sm-5 mt-xs-3">
+                    <div class="brand-img2 text-center">
+                        <img src="img/brand2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 col-md-4 col-sm-4 mt-md-5 mt-sm-5 mt-xs-3">
+                    <div class="brand-img3 text-center">
+                        <img src="img/brand3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 col-md-4 col-sm-4 mt-md-5 mt-sm-5 mt-xs-3">
+                    <div class="brand-img4 text-center">
+                        <img src="img/brand4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 col-md-4 col-sm-4 mt-md-5 mt-sm-5 mt-xs-3">
+                    <div class="brand-img5 text-center">
+                        <img src="img/brand5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 col-md-4 col-sm-4 mt-md-5 mt-sm-5 mt-xs-3">
+                    <div class="brand-img6 text-center">
+                        <img src="img/brand6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+
+    <section class="footer-bg pt-80">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-12 col-md-3">
+                    <div class="f-logo">
+                        <a href="#"><img class="img-fluid" src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="f-title pb-3">
+                        <h2 class="oswald font-24 text-white fw-normal">Working Hours</h2>
+                    </div>
+                    <ul class="ps-3">
+                        <li class="font-16 roboto text-white">Sunday - Thursday</li>
+                        <li class="font-16 roboto secondary list-unstyled ">08:00 am - 09:00pm</li>
+                    </ul>
+                    <ul class="ps-3">
+                        <li class="font-16 roboto text-white">Only Friday</li>
+                        <li class="font-16 roboto secondary list-unstyled ">03:00 pm - 09:00pm</li>
+                    </ul>
+                    <ul class="ps-0">
+                        <li class=" font-16 Merienda orange list-unstyled">Saturday Close</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="f-title pb-3">
+                        <h2 class="oswald font-24 text-white fw-normal">Contect Us</h2>
+                    </div>
+                    <ul class="ps-0">
+                        <div class="d-flex align-items-center">
+                            <div class="f-icon">
+                                <a href=""><i class="bi bi-geo-alt secondary"></i></a>
+                            </div>
+                            <div class="f-content ps-3">
+                                <li class="font-16 roboto secondary list-unstyled fw-semibold">Location :</li>
+                                <li class="font-16 roboto text-white list-unstyled ">55 Main Street, New York</li>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="ps-0">
+                        <div class="d-flex align-items-center">
+                            <div class="f-icon">
+                                <a href=""><i class="bi bi-envelope secondary"></i></i></a>
+                            </div>
+                            <div class="f-content ps-3">
+                                <li class="font-16 roboto secondary list-unstyled fw-semibold">Email Address :</li>
+                                <li class="font-16 roboto text-white list-unstyled ">kaffendev@gmail.com</li>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="ps-0">
+                        <div class="d-flex align-items-center">
+                            <div class="f-icon">
+                                <a href=""><i class="bi bi-telephone secondary"></i></a>
+                            </div>
+                            <div class="f-content ps-3">
+                                <li class="font-16 roboto secondary list-unstyled fw-semibold">Phone Number :</li>
+                                <li class="font-16 roboto text-white list-unstyled ">+012 (345) 678 99</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="f-title pb-3">
+                        <h2 class="oswald font-24 text-white fw-normal">Gallery</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="f-img">
+                                <img class="img-fluid" src="img/f-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="f-img">
+                                <img class="img-fluid" src="img/f-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="f-img">
+                                <img class="img-fluid" src="img/f-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="f-img mt-2 ">
+                                <img class="img-fluid" src="img/f-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="f-img mt-2 ">
+                                <img class="img-fluid" src="img/f-5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="f-img mt-2">
+                                <img class="img-fluid" src="img/f-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-light border-top">
+                <div class="container">
+                        <h3 class="font-18 text-center m-0 p-4">Copyright © 2022 Kaffen. All Rights Reserved.</h3>
+                </div>
+            </div>
+    </section>
+
+    <!-- back to top  -->
+
+    <div class="backtotop">
+        <a href="#" class=""><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $(window).load(function () {
+            $(".mainbox").fadeOut(2500);
+        })
+        $(window).scroll(function () {
+            if ($(window).scrolltop() > 200) {
+                $(".mainbar").addclass("black position-fixed top-0 shadow")
+                $("header").removeclass("black position-fixed")
+                $(".backtotop").fadeIn("bfixed")
+            }
+            else {
+                $(".mainbar").addclass("black position-fixed shadow")
+                $("header").removeclass("position-fixed top-0")
+                $(".backtotop").fadeOut("bfixed")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
